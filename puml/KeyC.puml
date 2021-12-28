@@ -6,7 +6,6 @@ participant ":CalculatorContext" as CalculatorContext
 participant "Display :HTMLElement" as Display
 
 KeyC -> ZahlLöschen: keyCPressed()
-ZahlLöschen -> CalculatorContext: getDisplayValue()
 ZahlLöschen -> CalculatorContext: setDisplayValue()
 CalculatorContext -> Display: set innerText()
 
