@@ -1,0 +1,13 @@
+@startuml
+
+participant "KeyC :HTMLElement" as KeyC
+participant ":ZahlLöschen" as ZahlLöschen
+participant ":CalculatorContext" as CalculatorContext
+participant "Display :HTMLElement" as Display
+
+KeyC -> ZahlLöschen: keyCPressed()
+ZahlLöschen -> CalculatorContext: get displayValue()
+ZahlLöschen -> CalculatorContext: set displayValue()
+CalculatorContext -> Display: set innerText()
+
+@enduml
