@@ -6,8 +6,8 @@ participant ":CalculatorContext" as CalculatorContext
 participant "Display :HTMLElement" as Display
 
 Key1 -> ZahlEingeben: key1Pressed()
-ZahlEingeben -> CalculatorContext: get displayValue()
-ZahlEingeben -> CalculatorContext: set displayValue()
+ZahlEingeben -> CalculatorContext: getDisplayValue()
+ZahlEingeben -> CalculatorContext: setDisplayValue()
 CalculatorContext -> Display: set innerText()
 
 @enduml

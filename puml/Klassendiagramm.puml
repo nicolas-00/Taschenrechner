@@ -10,23 +10,23 @@ onclick: functionRef( MouseEvent)
 class ZahlEingeben{
 key1Pressed()
 }
-class ZahlL�schen{
+class ZahlLoeschen{
 keyCPressed()
 }
 class CalculatorContext{
 getDisplayValue()
 setDisplayValue()
 }
-class Gui{
+class GuiAdapter{
 displayValue: HTMLElement
 key1: HTMLElement
 keyC: HTMLElement
 }
 HTMLElement --> ZahlEingeben
-HTMLElement --> ZahlLöschen
+HTMLElement --> ZahlLoeschen
 ZahlEingeben --> CalculatorContext
-ZahlLöschen --> CalculatorContext
-CalculatorContext --> Gui
+ZahlLoeschen --> CalculatorContext
+CalculatorContext --> GuiAdapter
 
 
 @enduml
