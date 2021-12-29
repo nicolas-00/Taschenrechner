@@ -8,8 +8,6 @@ class ZahlLoeschen {
     }
 
     keyCPressed() {
-        var displayValue = this.calculatorContext.getDisplayValue();
-        displayValue = 0;
-        this.calculatorContext.setDisplayValue(displayValue);
+        this.calculatorContext.setDisplayValue(0);
     }
 }
