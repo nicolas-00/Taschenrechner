@@ -1,11 +1,12 @@
 @startuml
 
-
+actor client
 participant calculatorContext
-participant Gui
+participant GuiAdapter
 
-calculatorContext --> Gui : setDisplayValue(displayValue)
-Gui --> Gui : HTMLElement set HTML.innerText()
+client -> calculatorContext : setDisplayValue()
+calculatorContext -> GuiAdapter : setDisplayValue() : displayValue
+GuiAdapter -> GuiAdapter : HTMLElement : HTML.innerText()
 
 
 
