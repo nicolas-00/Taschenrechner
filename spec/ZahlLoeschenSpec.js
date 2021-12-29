@@ -20,7 +20,6 @@ describe("ZahlLoeschen", function() {
             "setDisplayValue": undefined
         }));
         zahlLoeschen.keyCPressed();
-        expect(zahlLoeschen.calculatorContext.getDisplayValue).toHaveBeenCalled();
         expect(zahlLoeschen.calculatorContext.setDisplayValue).toHaveBeenCalledWith(0);
 
         zahlLoeschen.setCalculatorContext(jasmine.createSpyObj("calculatorContext", {
@@ -28,7 +27,6 @@ describe("ZahlLoeschen", function() {
             "setDisplayValue": undefined
         }));
         zahlLoeschen.keyCPressed();
-        expect(zahlLoeschen.calculatorContext.getDisplayValue).toHaveBeenCalled();
         expect(zahlLoeschen.calculatorContext.setDisplayValue).toHaveBeenCalledWith(0);
     });
 })
