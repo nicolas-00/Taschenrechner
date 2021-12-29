@@ -1,0 +1,12 @@
+@startuml
+
+
+participant calculatorContext
+participant Gui
+
+calculatorContext --> Gui : setDisplayValue(displayValue)
+Gui --> Gui : HTMLElement set HTML.innerText()
+
+
+
+@enduml
