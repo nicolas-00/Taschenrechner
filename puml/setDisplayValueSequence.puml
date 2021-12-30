@@ -3,10 +3,11 @@
 actor client
 participant calculatorContext
 participant GuiAdapter
+participant displayValue
 
 client -> calculatorContext : setDisplayValue()
-calculatorContext -> GuiAdapter : setDisplayValue() : displayValue
-GuiAdapter -> GuiAdapter : HTMLElement : HTML.innerText()
+calculatorContext -> GuiAdapter : displayValue()
+calculatorContext -> displayValue : innerText()
 
 
 
