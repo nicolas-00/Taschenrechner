@@ -9,9 +9,6 @@ function testKeyCPressed(displayValue) {
 
 }
 
-
-
-
 describe("ZahlLoeschen", function() {
     it('should be able to be created', function() {
         var zahlLoeschen = new ZahlLoeschen();

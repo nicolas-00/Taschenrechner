@@ -3,14 +3,14 @@ class CalculatorContext {
         this.displayValue = 0;
     }
 
-    get displayValue() {
+    getdisplayValue() {
         return this._displayValue;
     }
 
-    set displayValue(value) {
+    setdisplayValue(value) {
         this._displayValue = value;
-        if (this.mainView) {
-            this.mainView.display.innerText = this.displayValue.toString();
+        if (this.guiAdapter) {
+            this.guiAdapter.display.innerText = this.displayValue.toString();
         }
     }
 
