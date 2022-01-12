@@ -7,76 +7,48 @@ class ZahlEingeben {
         this.calculatorContext = calculatorContext;
     }
 
-    key1Pressed() {
+    keyPressed(value) {
         var displayValue = this.calculatorContext.displayValue;
         if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 1;
+            displayValue = displayValue * 10 + value;
         }
         this.calculatorContext.displayValue = displayValue;
+    }
+
+    key1Pressed() {
+        this.keyPressed(1)
     }
 
     key2Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 2;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(2)
     }
 
     key3Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 3;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(3)
     }
 
     key4Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 4;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(4)
     }
 
     key5Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 5;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(5)
     }
 
     key6Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 6;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(6)
     }
 
     key7Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 7;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(7)
     }
 
     key8Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 8;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(8)
     }
 
     key9Pressed() {
-        var displayValue = this.calculatorContext.displayValue;
-        if (displayValue < 100000) {
-            displayValue = displayValue * 10 + 9;
-        }
-        this.calculatorContext.displayValue = displayValue;
+        this.keyPressed(9)
     }
 
 }
