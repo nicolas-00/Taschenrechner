@@ -3,11 +3,11 @@ class CalculatorContext {
         this.displayValue = 0;
     }
 
-    getdisplayValue() {
+    get displayValue() {
         return this._displayValue;
     }
 
-    setdisplayValue(value) {
+    set displayValue(value) {
         this._displayValue = value;
         if (this.guiAdapter) {
             this.guiAdapter.display.innerText = this.displayValue.toString();

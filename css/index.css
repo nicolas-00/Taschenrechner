@@ -1,0 +1,9 @@
+div.display {
+    width: 240px;
+    text-align: left;
+}
+
+div.keyboard>div>button {
+    margin: 5px;
+    width: 50px;
+}
