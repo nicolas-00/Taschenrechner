@@ -15,6 +15,10 @@ class ZahlEingeben {
         this.calculatorContext.displayValue = displayValue;
     }
 
+    key0Pressed() {
+        this.keyPressed(0)
+    }
+
     key1Pressed() {
         this.keyPressed(1)
     }

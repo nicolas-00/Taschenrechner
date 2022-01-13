@@ -14,11 +14,20 @@ guiAdapter.button7 = document.getElementById("button-7");
 guiAdapter.button8 = document.getElementById("button-8");
 guiAdapter.button9 = document.getElementById("button-9");
 guiAdapter.buttonC = document.getElementById("button-c");
+guiAdapter.buttonpoint = document.getElementById("button-point");
+guiAdapter.buttonequal = document.getElementById("button-equal");
+guiAdapter.buttonaddition = document.getElementById("button-addition");
+guiAdapter.buttonsubtraktion = document.getElementById("button-subtraktion");
+guiAdapter.buttonmultiplikation = document.getElementById("button-multiplikation");
+guiAdapter.buttondivision = document.getElementById("button-division");
 
 zahlEingeben.calculatorContext = calculatorContext;
 zahlLoeschen.calculatorContext = calculatorContext;
 calculatorContext.guiAdapter = guiAdapter;
 
+guiAdapter.button0.onclick = function() {
+    zahlEingeben.key0Pressed();
+}
 guiAdapter.button1.onclick = function() {
     zahlEingeben.key1Pressed();
 }
@@ -48,4 +57,22 @@ guiAdapter.button9.onclick = function() {
 }
 guiAdapter.buttonC.onclick = function() {
     zahlLoeschen.keyCPressed();
+}
+guiAdapter.buttonpoint.onclick = function() {
+
+}
+guiAdapter.buttonequal.onclick = function() {
+
+}
+guiAdapter.buttonaddition.onclick = function() {
+
+}
+guiAdapter.buttonsubtraktion.onclick = function() {
+
+}
+guiAdapter.buttonmultiplikation.onclick = function() {
+
+}
+guiAdapter.buttondivision.onclick = function() {
+
 }
