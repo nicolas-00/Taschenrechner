@@ -8,14 +8,25 @@ class HTMLElement{
 onclick: functionRef( MouseEvent)
 }
 class ZahlEingeben{
+setCalculatorContext(calculatorContext)
+keyPressed(value)
 key1Pressed()
+operatorPressed()
 }
 class ZahlLoeschen{
+setCalculatorContext(calculatorContext)
 keyCPressed()
 }
 class CalculatorContext{
-getDisplayValue()
-setDisplayValue()
+get DisplayValue()
+set DisplayValue()
+}
+class index{
+calculatorContext: CalculatorContext()
+zahlEingeben: ZahlEingeben()
+zahlLoeschen: ZahlLoeschen()
+guiAdapter: GuiAdapter()
+document.getElementById(): guiAdapter.button
 }
 class GuiAdapter{
 displayValue: HTMLElement
@@ -26,7 +37,9 @@ HTMLElement --> ZahlEingeben
 HTMLElement --> ZahlLoeschen
 ZahlEingeben --> CalculatorContext
 ZahlLoeschen --> CalculatorContext
-CalculatorContext --> GuiAdapter
+CalculatorContext --> index
+index --> GuiAdapter
+
 
 
 @enduml

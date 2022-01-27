@@ -15,6 +15,13 @@ class ZahlEingeben {
         this.calculatorContext.displayValue = displayValue;
     }
 
+    operatorPressed(operator) {
+        var displayValue = this.calculatorContext.displayValue;
+        displayValue = operator;
+        this.calculatorContext.displayValue = displayValue;
+    }
+
+
     key0Pressed() {
         this.keyPressed(0)
     }
@@ -53,6 +60,22 @@ class ZahlEingeben {
 
     key9Pressed() {
         this.keyPressed(9)
+    }
+    operatorPlusPressed() {
+        var plus = "+"
+        this.operatorPressed(plus)
+    }
+    operatorMinusPressed() {
+        var minus = "-"
+        this.operatorPressed(minus)
+    }
+    operatorMalPressed() {
+        var mal = "*"
+        this.operatorPressed(mal)
+    }
+    operatorDurchPressed() {
+        var durch = "/"
+        this.operatorPressed(durch)
     }
 
 }
